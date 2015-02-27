@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SSE</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="js/vendor/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <header id="topo">
+            <div class="container">
+                <div class="row">
+                    <h1 id="logo" class="col-lg-4">
+                        <a href="index.html">
+                            <img class="img-responsive" src="img/logo.png" alt="SSE"/>
+                        </a>
+                    </h1>
+                    <div class="col-lg-8">
+                        <div class="idioma-topo text-right">
+                            <span>idioma</span>
+                            <a href="#">
+                                <img src="img/bandeira-brasil.png" alt="br"/>
+                            </a>
+                            <a href="#">
+                                <img src="img/bandeira-usa.png" alt="us"/>
+                            </a>
+                        </div>
+                        <nav class="menu pull-right">
+                            <ul>
+                                <li>
+                                    <a href="aempresa.html" title="A Empresa">A Empresa</a>
+                                </li>
+                                <li>
+                                    <a href="servicos.html" title="Serviços">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="produtos.html" title="Produtos">Produtos</a>
+                                </li>
+                                <li>
+                                    <a class="ativo" href="trabalhe.html" title="Trabalhe Conosco">Trabalhe Conosco</a>
+                                </li>
+                                <li>
+                                    <a href="localizacao.html" title="Localização">Localização</a>
+                                </li>
+                                <li>
+                                    <a class="no-margin" href="contato.html" title="Contatos">Contatos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="page-listagem">
+            <header class="topo">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li>Você está em:</li>
+                            <li><a href="index.html" title="Home">Home</a></li>
+                            <li> | <a href="trabalhe.html" title="Trabalhe Conosco">Trabalhe Conosco</a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="titulo">Trabalhe Conosco</h1>
+                </div>
+            </header>
+            <div class="container">
+                <h2 class="subtitulo">Faça parte do nosso time</h2>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form id="form-trabalhe" action="#">
+                            <div class="form-group borda">
+                                <label for="nome">Nome Completo</label>
+                                <input id="nome" name="nome" class="form-control" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" class="form-control" type="email"/>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <label for="cidade">Cidade</label>
+                                        <input id="cidade" name="cidade" class="form-control" type="text"/>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <label for="estado">Estado</label>
+                                        <select name="estado" id="estado" class="form-control">
+                                            <option value=""></option>
+                                            <option value="AC">AC</option>
+                                            <option value="AL">AL</option>
+                                            <option value="AP">AP</option>
+                                            <option value="AM">AM</option>
+                                            <option value="BA">BA</option>
+                                            <option value="CE">CE</option>
+                                            <option value="DF">DF</option>
+                                            <option value="ES">ES</option>
+                                            <option value="GO">GO</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MT">MT</option>
+                                            <option value="MS">MS</option>
+                                            <option value="MG">MG</option>
+                                            <option value="PA">PA</option>
+                                            <option value="PB">PB</option>
+                                            <option value="PR">PR</option>
+                                            <option value="PE">PE</option>
+                                            <option value="PI">PI</option>
+                                            <option value="RJ">RJ</option>
+                                            <option value="RN">RN</option>
+                                            <option value="RS">RS</option>
+                                            <option value="RO">RO</option>
+                                            <option value="RR">RR</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SP">SP</option>
+                                            <option value="SE">SE</option>
+                                            <option value="TO">TO</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="atuacao">Área de Atuação</label>
+                                <input id="atuacao" name="atuacao" class="form-control" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="arquivo">Envie um arquivo</label>
+                                <input id="arquivo" name="arquivo" class="form-control" type="file"/>
+                            </div>
+                            <div class="form-bt">
+                                <input class="bt" type="image" src="img/bt-enviar.jpg"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <img src="img/img-trabalhe.jpg" alt="trabalhe"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="rodape">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="index.html" title="SSE">
+                            <img src="img/logo-rodape.png" alt="SSE"/>
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="copy">Todos os direitos reservados</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="social face" href="#" target="_blank"></a>
+                        <a class="social in" href="https://br.linkedin.com/company/sse-sirio-sistemas-eletr-nicos-ltda" target="_blank"></a>
+                    </div>
+                    <div class="col-lg-2">
+                        <a class="rina" href="#" target="_blank">
+                            <img src="img/img-rina.png" alt="rina"/>
+                        </a>
+                    </div>
+                    <div class="col-lg-2">
+                        <p class="desenvolvido">Produzido por <a href="http://www.kbrtec.com.br" target="_blank">KBRTEC</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/vendor/fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script type="text/javascript" src="js/vendor/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
